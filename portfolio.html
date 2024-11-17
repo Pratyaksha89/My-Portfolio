@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal portfolio to showcase skills, projects, and services.">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>logo image.jpg
+<body>
+    <!-- Body content will go here -->
+    <header>
+        <div class="logo"><img src="logo image.jpg" alt="Logo image" height="60px"></div>
+        <button id="theme-toggle" onclick="toggleTheme()">🌞</button>
+        <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    <script>
+        function toggleTheme() {
+          const button = document.getElementById("theme-toggle");
+          const body = document.body;
+    
+          // Toggle dark mode
+          body.classList.toggle("dark-mode");
+    
+          // Change emoji based on the current mode
+          if (body.classList.contains("dark-mode")) {
+            button.innerHTML = "🌙"; // Night mode (moon emoji)
+          } else {
+            button.innerHTML = "🌞"; // Day mode (sun emoji)
+          }
+        }
+      </script>
+     <section id="home">
+         <div class="profile-img">
+                  <img src="profileimage.jpg" alt="Profile Image">
+         </div>
+          <div class="box">
+                     <h1>Welcome to My Portfolio!</h1>
+                     <h3>It's me Pratyaksha</h2>
+                      <h5>I am a Web Developer.</h5>
+          </div>
+
+           <div class="social-icons">
+             <a href="https://facebook.com" class="icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+             <a href="https://twitter.com" class="icon twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+             <a href="https://instagram.com" class="icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+             <a href="https://linkedin.com" class="icon linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+           <div class="resumebutton">
+               <a href="resume.pdf" download class="btn">Download Resume</a>
+          </div>
+     </section>
+        
+     <section id="about-section">
+        <div class="about-img">
+            <img src="aboutimage.jpg" alt="About Image">
+        </div>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p class="centered-paragraph">
+                Hello! I'm Pratyaksha Garg, a passionate web developer dedicated to crafting exceptional digital experiences. With a strong foundation in web technologies and a keen eye for design, I strive to create websites that are not only visually appealing but also highly functional and user-friendly.
+                My journey into web development began with a fascination for how websites work behind the scenes. Over the years, I have honed my skills in HTML, CSS, JavaScript, and various frameworks, always staying updated with the latest trends and best practices in the industry. I believe in the power of clean code and effective design to solve real-world problems and enhance user engagement.
+                When I'm not coding, you might find me exploring new technologies, experimenting with creative design projects. I am committed to continuous learning and improvement, and I'm excited about the opportunity to contribute to innovative and impactful web projects.
+                Feel free to connect with me or explore my portfolio to see some of the work I have done. Let's build something amazing together!
+            </p>
+            <a href="#read-more" class="btn">Read More</a>
+        </div>
+    </section>
+    
+    
+          <div class="skills-section">
+              <h2>My Skills</h2>
+              <div class="skill-container">
+                  <div class="skill-title">HTML</div>
+                  <div class="progress-bar">
+                      <div class="progress-bar-inner html"></div>
+                  </div>
+              </div>
+      
+              <div class="skill-container">
+                  <div class="skill-title">CSS</div>
+                  <div class="progress-bar">
+                      <div class="progress-bar-inner css"></div>
+                  </div>
+              </div>
+      
+              <div class="skill-container">
+                  <div class="skill-title">JavaScript</div>
+                  <div class="progress-bar">
+                      <div class="progress-bar-inner javascript"></div>
+                  </div>
+              </div>
+      
+              <div class="skill-container">
+                  <div class="skill-title">MongoDB</div>
+                  <div class="progress-bar">
+                      <div class="progress-bar-inner mongodb"></div>
+                  </div>
+              </div>
+      
+              <div class="skill-container">
+                  <div class="skill-title">React</div>
+                  <div class="progress-bar">
+                      <div class="progress-bar-inner react"></div>
+                  </div>
+              </div>
+          </div>    
+    </section>
+    <section id="services">
+        <h2>Services</h2>
+        <section class="services-section">
+            <h2>Our Services</h2>
+    
+            <!-- Service 1 -->
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>We provide cutting-edge web development services tailored to your business needs. From responsive design to complex functionalities, we have you covered.</p>
+                <a href="service1-details.html" class="service-btn">Learn More</a>
+            </div>
+    
+            <!-- Service 2 -->
+            <div class="service-card">
+                <h3>UI/UX Design</h3>
+                <p>Our UI/UX design services ensure your website is user-friendly and provides an optimal experience on all devices.</p>
+                <a href="service2-details.html" class="service-btn">Learn More</a>
+            </div>
+    
+            <!-- Service 3 -->
+            <div class="service-card">
+                <h3>SEO Optimization</h3>
+                <p>Boost your website's visibility and improve search engine rankings with our expert SEO services.</p>
+                <a href="service3-details.html" class="service-btn">Learn More</a>
+            </div>
+        </section>
+        <div class="cert-card">
+            <h3>Services Name</h3>
+            <p>Details about the Services.</p>
+            <a href="certificate1.pdf" target="_blank" class="btn">View Services</a>
+        </div>
+
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A modern portfolio website built using HTML, CSS, and JavaScript with a clean, responsive layout.</p>
+            </div>
+            
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <h3>E-commerce Platform</h3>
+                <p>An e-commerce web application with payment integration, cart functionality, and product management.</p>
+            </div>
+            
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <h3>Blog Application</h3>
+                <p>A full-stack blog application with user authentication, CRUD functionality, and rich text editor integration.</p>
+            </div>
+            
+            <!-- Project Card 4 -->
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>A simple weather app fetching real-time data using the OpenWeather API, with location-based forecasts.</p>
+            </div>
+            
+            <!-- Project Card 5 -->
+            <div class="project-card">
+                <h3>Social Media Dashboard</h3>
+                <p>An interactive social media analytics dashboard with real-time updates and data visualizations.</p>
+            </div>
+
+            <!-- Project Card 6 -->
+            <div class="project-card">
+                <h3>Movie Search App</h3>
+                <p>A web app that lets users search for movies, view ratings, and get details about them using the TMDB API.</p>
+            </div>
+
+            <!-- Project Card 7 -->
+            <div class="project-card">
+                <h3>Event Booking System</h3>
+                <p>Build a system for booking events or appointments. Include a calendar view, booking form, and admin panel.</p>
+            </div>
+        </div>
+    </section>
+    <div class="contact-section">
+        <h2>Contact Me</h2>
+
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    
+        
+        <footer class="footer">
+            <p>&copy; 2024 My Portfolio</p>
+            <p>Get in Touch</p>
+            <div class="footer-buttons">
+                <a href="Mob no:+918871319497" class="footer-btn call-btn">Call Me</a>
+                <a href="pratyakshagi@gmail.com" class="footer-btn email-btn">Email Me</a>
+            </div>
+        </footer>
+                                
+</body>
+</html>
